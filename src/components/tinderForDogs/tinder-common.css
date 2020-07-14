@@ -1,0 +1,28 @@
+.tinder-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link {
+    display: block;
+    margin: 10px;
+}
+
+.tinder-image-container {
+    height: 50vh;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tinder-image {
+    border-radius: 15px;
+    box-shadow: 0 0 15px silver;
+}
+
+.error {
+    color: red;
+}

@@ -59,7 +59,7 @@ const AddProgrammer = (name: string) => {
     const successPayload = {
       loader: false,
       // Since this array is using a reference of `programmersArray` we remove that reference
-      selectedProgrammersArray: JSON.parse(JSON.stringify(filteredArray[0])),
+      selectedProgrammersArray: Object.assign({}, filteredArray[0]),
       isSecondTabOpen: true,
     };
     dispatch(requestSuccess(successPayload));

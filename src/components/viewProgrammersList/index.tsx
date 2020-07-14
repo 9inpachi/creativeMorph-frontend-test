@@ -30,8 +30,7 @@ const styles = (theme: any) => ({
     backgroundColor: red[500],
   },
   slider: {
-    width: '50%',
-    padding: '10px 0px',
+    padding: '10px',
   },
 });
 class ViewProgrammers extends React.PureComponent<any, any> {
