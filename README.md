@@ -1,3 +1,38 @@
+## Running Tasks
+
+### `Task 1`
+
+1. Go to [http://localhost:3000/view-programmers](http://localhost:3000/view-programmers)
+1. Add a programmer
+1. Change skill level using the slider
+1. The original programmer's skill level should not be changing now
+
+**Fixed**
+
+* Fixed reference of original programmer being used by the selected programmmer
+* Console errors for `Grid` spacing
+* Console warning for `button` inside `button` - invalid DOM
+* Console warning for key prop of children
+
+**Commits**
+* [1a7a7f7](https://github.com/9inpachi/creativeMorph-frontend-test/commit/6a3ed57cbb9659e30a3f739d37807c634a6b22d9)
+* [d9d63e9](https://github.com/9inpachi/creativeMorph-frontend-test/commit/9b7c046c3ad38586b7a7a902cfe4ecb49e9ce28c)
+
+### `Task 2`
+
+1. Go to [http://localhost:3000/tinder-for-dogs](http://localhost:3000/tinder-for-dogs)
+1. Like or dislike (or none) the current dog and click `Next` (icon)
+1. Keep liking, disliking and moving to the next dog until you are satisfied
+1. Click on the `Go to data route` link at the top of the dog image
+1. See the data there and paginate using the options at the bottom right of the table
+
+**Commits**
+* [9b7c046](https://github.com/9inpachi/creativeMorph-frontend-test/commit/1a7a7f773f59703d77dbcfd7ae57acc6041e7711)
+
+PEACE.
+
+---
+
 ## Test details
 
 In order to take this test, please create a fork of this repo from your own github profile and push all the changes there in your forked repo. Once you have completed all the tasks, send a link of this forked repo, with all your changes pushed to masoodtalha7@gmail.com. Please note that no other form of submission will be considered. 
