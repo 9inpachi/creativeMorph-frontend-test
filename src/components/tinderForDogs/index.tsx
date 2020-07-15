@@ -106,7 +106,7 @@ class TinderForDogs extends PureComponent<any, IState> {
 
                 <div className="action-buttons">
                     {this.actions.map((action, i) => (
-                        <Tooltip key={'action_' + i} title={action.title}>
+                        <Tooltip key={'action-' + i} title={action.title}>
                             <IconButton onClick={action.onClick}>
                                 {action.icon}
                             </IconButton>

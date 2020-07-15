@@ -4,7 +4,7 @@ import AuthPage from './components/auth';
 import ViewProgrammers from './components/viewProgrammersList';
 import TinderForDogs from './components/tinderForDogs';
 import './App.css';
-import viewTinderData from './components/tinderForDogs/ViewTinderData';
+import ViewTinderData from './components/tinderForDogs/ViewTinderData';
 
 interface Props {}
 interface State {}
@@ -19,7 +19,7 @@ class App extends PureComponent<Props, State> {
           <Route exact path="/" component={AuthPage} />
           <Route exact path="/view-programmers" component={ViewProgrammers} />
           <Route exact path="/tinder-for-dogs" component={TinderForDogs} />
-          <Route exact path="/tinder-for-dogs-data" component={viewTinderData} />
+          <Route exact path="/tinder-for-dogs-data" component={ViewTinderData} />
           <div />
         </div>
       </Router>

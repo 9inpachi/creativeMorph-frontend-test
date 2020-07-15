@@ -15,7 +15,9 @@
 * Console warning for key prop of children
 
 **Commits**
+
 * [1a7a7f7](https://github.com/9inpachi/creativeMorph-frontend-test/commit/6a3ed57cbb9659e30a3f739d37807c634a6b22d9)
+* [9b7c046](https://github.com/9inpachi/creativeMorph-frontend-test/commit/1a7a7f773f59703d77dbcfd7ae57acc6041e7711#diff-ee0214ce735c126c616e19fcd970e683)
 * [d9d63e9](https://github.com/9inpachi/creativeMorph-frontend-test/commit/9b7c046c3ad38586b7a7a902cfe4ecb49e9ce28c)
 
 ### `Task 2`
@@ -27,6 +29,7 @@
 1. See the data there and paginate using the options at the bottom right of the table
 
 **Commits**
+
 * [9b7c046](https://github.com/9inpachi/creativeMorph-frontend-test/commit/1a7a7f773f59703d77dbcfd7ae57acc6041e7711)
 
 PEACE.
