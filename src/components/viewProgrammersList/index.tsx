@@ -8,13 +8,14 @@ import Avatar from '@material-ui/core/Avatar';
 import programmersAction from '../../state/programmer/actions';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Slider from '@material-ui/lab/Slider';
-const { GetProgrammers, AddProgrammer, RemoveProgrammer, ChangeLevelValue } = programmersAction;
 import { bindActionCreators, Dispatch } from 'redux';
 import { AppState } from '../../state';
 import { connect } from 'react-redux';
 import { Programmer } from '../../state/programmer/types';
 import { red } from '@material-ui/core/colors';
 import { Grid } from '@material-ui/core';
+
+const { GetProgrammers, AddProgrammer, RemoveProgrammer, ChangeLevelValue } = programmersAction;
 
 const styles = (theme: any) => ({
   card: {

@@ -14,7 +14,7 @@ interface IState {
     loading: boolean,
     error: string,
     dogPicture: string,
-    liked: boolean | undefined
+    liked: boolean
 }
 
 class TinderForDogs extends PureComponent<any, IState> {
@@ -44,7 +44,7 @@ class TinderForDogs extends PureComponent<any, IState> {
             loading: true,
             error: '',
             dogPicture: '',
-            liked: undefined
+            liked: false
         }
 
         this.nextDogPhoto = this.nextDogPhoto.bind(this);

@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { TinderDog } from '../../state/tinderForDogs/types';
+import { TinderDog, TinderDogState } from '../../state/tinderForDogs/types';
 import { connect } from 'react-redux';
 import { AppState } from '../../state';
 import { Link } from 'react-router-dom';
@@ -12,9 +12,13 @@ interface IState {
     tableRowsPerPage: number
 }
 
-class ViewTinderData extends PureComponent<any, IState> {
+interface Props {
+    dog: TinderDogState
+}
 
-    constructor(props: any) {
+class ViewTinderData extends PureComponent<Props, IState> {
+
+    constructor(props: Props) {
         super(props);
 
         this.state = {
@@ -35,6 +39,11 @@ class ViewTinderData extends PureComponent<any, IState> {
         this.setState({ tableRowsPerPage: e.target.value });
     }
 
+    getPaginatedTinderDogs() {
+        return this.state.tinderDogs.slice(this.state.tablePage * this.state.tableRowsPerPage,
+            this.state.tablePage * this.state.tableRowsPerPage + this.state.tableRowsPerPage);
+    }
+
     render() {
         const { tinderDogs, tablePage, tableRowsPerPage } = this.state;
         return (
@@ -52,7 +61,7 @@ class ViewTinderData extends PureComponent<any, IState> {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {tinderDogs.length > 0 && tinderDogs.slice(tablePage * tableRowsPerPage, tablePage * tableRowsPerPage + tableRowsPerPage).map((dog: TinderDog, index: number) => (
+                            {this.getPaginatedTinderDogs().map((dog: TinderDog, index: number) => (
                                 <TableRow key={'tinder-dog-' + index}>
                                     <TableCell><img src={dog.photoLink} width="30px" /></TableCell>
                                     <TableCell>{dog.photoLink}</TableCell>
